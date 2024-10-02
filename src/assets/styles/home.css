@@ -1,0 +1,39 @@
+.home {
+    margin-top: 3%;
+    font-family: 'Inter';
+    align-items: center;
+}
+
+.builder-box {
+    color: #fac310;
+    text-shadow: 1.2px 1.2px 2px black;
+    font-size: 150%;
+}
+
+.builders {
+    margin-top: 0;
+}
+
+.why-content {
+    margin-top: 2%;
+    align-items: center;
+}
+
+.why {
+    text-align: center;
+    font-weight: 700;
+}
+
+.why-text {
+    text-align: justify;
+    margin-left: 3.5%;
+    font-size: 1.3em;
+}
+
+@media (max-width: 760px) {
+    .why-heading {
+        margin-bottom: 4%;
+        text-align: center;
+        margin-left: 30%;
+    }
+}

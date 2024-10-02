@@ -1,0 +1,72 @@
+.projects {
+    font-family: 'Inter';
+    margin-top: 2%;
+}
+
+.parent-video {
+    align-items: center;
+    justify-content: center;
+}
+
+.parent-carousel {
+    justify-content: center;
+}
+
+.projects-video {
+    margin-top: 4%;
+    width: 65vw;
+    height: 25vw;
+    box-shadow: 8px 8px 18px grey;
+}
+
+.project-carousel {
+    box-shadow: 8px 8px 18px grey;
+}
+
+.project-carousel .carousel-item{
+    height: 25vw;
+}
+
+.catalogue {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 2%;
+}
+
+.carousel-item img {
+   min-height: 25vw;
+   object-fit: cover;
+}
+
+#carouselExampleCaptions {
+    margin-left: 2%;
+}
+
+#carouselExampleCaptions2 {
+    margin-right: 2%;
+}
+
+
+@media (max-width: 600px) {
+    .projects-video {
+        margin-top: 6%;
+        width: 83vw;
+        height: 50vw;
+    }
+
+    .project-carousel .carousel-item{
+        height: 50vw;
+    }
+
+    #carouselExampleCaptions {
+        margin-top: 4%;
+        margin-left: 3%;
+        width: 81vw;
+    }
+
+    #carouselExampleCaptions2 {
+        margin-top: 8%;
+        margin-left: 3%;
+        width: 81vw;
+    }
+}

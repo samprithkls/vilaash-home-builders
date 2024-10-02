@@ -1,0 +1,63 @@
+.footer {
+    font-family: 'Inter';
+    background-color: #292c2e;
+    margin-top: 4%;
+    padding-top: 2%;
+    color: whitesmoke;
+}
+
+.rounded-icons{
+    border: 1.5px solid whitesmoke;
+    border-radius: 100%;
+    background-clip:content-box;
+    padding: 1%;
+}
+
+.footer-infos {
+    margin-left: 5%;
+}
+
+.footer-info {
+    margin-bottom: 5%;
+    font-size: 1em;
+}
+
+.footer-about {
+    color: rgb(167, 166, 166);
+    text-align: justify;
+}
+
+.footer-links {
+    margin-left: 1%;
+}
+
+.footer-link {
+    color: whitesmoke;
+}
+
+.footer-link:hover {
+    color: rgb(167, 166, 166);
+}
+
+.plug {
+    text-align: center;
+}
+
+.plug-email {
+    color: #2596be;
+}
+
+.plug-email:hover {
+    color: rgb(167, 166, 166);
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .parent-about {
+        margin-right: 10%;
+    }
+
+    .footer-links {
+        display: none;
+    }
+}

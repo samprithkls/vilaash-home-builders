@@ -1,0 +1,54 @@
+.contact {
+    font-family: 'Inter';
+}
+
+.contact-container {
+    display: flex;
+}
+
+.contact-header {
+    font-weight: 800;
+    font-size: 210%;
+}
+
+.line {
+    border-top: 0.5em solid #fac310;
+    opacity: 1;
+}
+
+.contact-name {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.contact-label {
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 1%;
+}
+
+.contact-form {
+    width: 80%;
+    margin-left: 14%;
+}
+
+.contact-input {
+    margin-bottom: 2%;
+}
+
+@media (max-width: 720px) {
+    .line {
+        display: none;
+    }
+
+    .yellow-line {
+        background-color: #fac310;
+        height: 7%;
+        width: 90%;
+        margin-left: 6%;
+    }
+
+    .contact-form {
+        margin-left: 6%;
+    }
+}

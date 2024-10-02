@@ -1,0 +1,32 @@
+.about {
+    font-family: 'Inter';
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.about-content {
+    font-size: 1.3em;
+    text-align: justify;
+    margin-left: 2%;
+    margin-right: 1.5%;
+}
+
+.about-carousel {
+    box-shadow: 8px 8px 14px grey;
+    margin-left: 3%;
+}
+
+.about-carousel .carousel-item{
+    height: 25vw;
+}
+
+
+@media (max-width: 600px) {
+    .about-content {
+        margin-top: 6%;
+    }
+
+    .about-carousel .carousel-item{
+        height: 60vw;
+    }
+}

@@ -1,0 +1,80 @@
+.div-login-form {
+    font-family: 'Inter';
+}
+
+.login-form {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.form-label {
+    margin-bottom: 1.5%;
+    font-size: 1.2em;
+}
+
+.form-control {
+    margin-bottom: 2%;
+    height: 50px;
+}
+
+.alert {
+    margin-left: 30%;
+    width: 45%;
+}
+
+.table {
+    margin-top: 2%;
+}
+
+.thead-dark {
+    background-color: rgb(39, 39, 39);
+    color: whitesmoke;
+}
+
+.alert-close {
+    float: right;
+}
+
+.logout-btn {
+    float: right;
+    margin-right: 10%;
+}
+
+.parent-admin-add {
+    margin-top: 4%;
+}
+
+.admin-success {
+    margin-left: 0;
+}
+
+.excel {
+    margin-left: 5%;
+}
+
+@media (max-width: 600px) {
+    .login-form {
+        width: 85%;
+        margin-left: 7%;
+        margin-top: 15%;
+    }
+
+    .form-label {
+        margin-bottom: 3%;
+    }
+
+    .form-control {
+        margin-bottom: 4%;
+    }
+
+    .alert {
+        width: 80%;
+        margin-left: 8.5%;
+    }
+
+    .admin-success {
+        margin-top: 3%;
+    }
+
+}
