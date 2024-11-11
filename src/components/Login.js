@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {GrClose} from 'react-icons/gr';
 import {MdOutlineDeleteOutline} from 'react-icons/md';
 import axios from 'axios';
-import ReactHTMLTableToExcel from 'react-html-table-to-excel';
+import * as XLSX from 'xlsx';
 import '../assets/styles/login.css';
 
 const Login = () => {
@@ -75,6 +75,13 @@ const Login = () => {
         }
     }
 
+    const exportToExcel = () => {
+        const worksheet = XLSX.utils.json_to_sheet(messages);
+        const workbook = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(workbook, worksheet, "Messages");
+        XLSX.writeFile(workbook, `Messages_${new Date().toLocaleDateString()}.xlsx`);
+    };
+
     return (
         <div>
         { 
@@ -105,13 +112,8 @@ const Login = () => {
                 <div className='row parent-admin-add'>
                     <div className='col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12'>
                         <button type="button" className="btn btn-danger admin-add btn-md" data-bs-toggle="modal" data-bs-target="#exampleModal1">Add admin</button>
-                        <ReactHTMLTableToExcel 
-                            table="data"
-                            filename={new Date().getDate()+"-"+new Date().getMonth()+"-"+new Date().getYear()}
-                            sheet="Sheet1"
-                            buttonText="Export to excel"
-                            className="btn btn-success excel"
-                        />
+                        <button onClick={exportToExcel} className="btn btn-success excel">Export to Excel</button>
+                        <h5 style={{ marginTop: '5%' }}>{`There are ${messages.length} messages/queries.`}</h5>
                     </div>
                     <div className='col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12'>
                         
